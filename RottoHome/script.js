@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("drawBtn");
+  button.addEventListener("click", generateLotto);
+});
+
 function generateLotto() {
   const resultsDiv = document.getElementById("results");
   resultsDiv.innerHTML = ""; // 초기화
